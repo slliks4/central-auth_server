@@ -8,8 +8,8 @@ from .models import CustomUser
 class UserAdmin(BaseUserAdmin):
     model = CustomUser
 
-    list_display = ('email', 'id', 'first_name', 'last_name', 'phone', 'is_verified', 'is_staff', 'is_active')
-    list_filter = ('is_staff', 'is_active', 'is_superuser')
+    list_display = ('email', 'username', 'id', 'first_name', 'last_name', 'phone', 'is_verified', 'is_staff', 'is_active')
+    list_filter = ('is_staff', 'is_active', 'is_superuser', 'is_verified')
 
     fieldsets = (
         (None, {'fields': ('email', 'password', 'phone', 'is_verified')}),

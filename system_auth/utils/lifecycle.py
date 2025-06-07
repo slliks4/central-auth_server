@@ -1,5 +1,5 @@
-def on_create():
-    response = {}
+def on_create(data) -> {}:
+    response = {data}
     return response
 
 
